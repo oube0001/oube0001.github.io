@@ -133,9 +133,15 @@ button {
     cursor: pointer;
 }
 
-/* --- Footer --- */
+/* --- Correction Finale du Footer --- */
 footer {
-    text-align: right;
-    padding: 10px 40px 40px 0;
-    font-size: 13px;
+    width: 100%;            /* Force le footer à faire toute la largeur */
+    text-align: right;      /* Aligne le texte à DROITE */
+    padding: 20px 40px;     /* 40px à droite pour s'aligner avec le reste du texte */
+    box-sizing: border-box; /* Évite que le footer ne dépasse à cause du padding */
+}
+
+footer p {
+    margin: 0;              /* Enlève les marges automatiques du paragraphe */
+    display: block;         /* S'assure que le paragraphe occupe sa ligne */
 }
