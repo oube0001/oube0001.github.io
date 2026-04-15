@@ -9,12 +9,14 @@
 
 <body>
 
-<header>
+<!-- HEADER -->
+<header class="header">
 
-    <img src="images/logo.png" alt="Three Star Media logo">
+    <img src="images/logo.png" alt="Three Star Media logo" class="logo">
 
-    <nav>
-        <ul>
+    <!-- NAVIGATION -->
+    <nav class="nav">
+        <ul class="nav-list">
             <li><a href="#">Home</a></li>
             <li><a href="#about">About Us</a></li>
             <li><a href="#services">Services</a></li>
@@ -23,8 +25,10 @@
         </ul>
     </nav>
 
-    <form>
-        <input type="text" placeholder="Search">
+    <!-- SEARCH -->
+    <form class="search-form">
+        <label for="search">Search</label><br>
+        <input type="text" id="search" name="search">
         <button type="submit">Search</button>
     </form>
 
@@ -33,9 +37,8 @@
 <main>
 
 <!-- HERO -->
-<section>
-
-    <img src="images/main-banner.jpg" alt="Office banner">
+<section class="hero">
+    <img src="images/main-banner.jpg" alt="Office banner" class="hero-image">
 
     <h1>Welcome to Three Star Media</h1>
 
@@ -46,13 +49,12 @@
     </p>
 
     <a href="#">Connect with us</a>
-
 </section>
 
 <!-- ABOUT -->
-<section id="about">
+<section id="about" class="about">
 
-    <img src="images/about-us.jpg" alt="Office space">
+    <img src="images/about-us.jpg" alt="Office space" class="about-image">
 
     <h2>About Us</h2>
 
@@ -69,55 +71,55 @@
 </section>
 
 <!-- SERVICES -->
-<section id="services">
+<section id="services" class="services">
 
     <h2>Our Services</h2>
 
-    <div>
-        <img src="images/digital.jpg" alt="Digital">
+    <div class="service">
+        <img src="images/digital.jpg" alt="Digital transformation service">
         <h3>Digital Transformation</h3>
         <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             Eius vel, rem inventore quo tempora animi mollitia eaque error qui consectetur in reprehenderit magnam at vitae corporis quaerat deleniti explicabo nisi?
         </p>
         <a href="#">Digital Plans</a>
     </div>
 
-    <div>
-        <img src="images/marketing.jpg" alt="Marketing">
+    <div class="service">
+        <img src="images/marketing.jpg" alt="Marketing service">
         <h3>Marketing</h3>
         <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             Eius vel, rem inventore quo tempora animi mollitia eaque error qui consectetur in reprehenderit magnam at vitae corporis quaerat deleniti explicabo nisi?
         </p>
         <a href="#">Marketing Plans</a>
     </div>
 
-    <div>
-        <img src="images/video.jpg" alt="Video">
+    <div class="service">
+        <img src="images/video.jpg" alt="Video production service">
         <h3>Video Production</h3>
         <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             Eius vel, rem inventore quo tempora animi mollitia eaque error qui consectetur in reprehenderit magnam at vitae corporis quaerat deleniti explicabo nisi?
         </p>
         <a href="#">Video Plans</a>
     </div>
 
-    <div>
-        <img src="images/web.jpg" alt="Web">
+    <div class="service">
+        <img src="images/web.jpg" alt="Web development service">
         <h3>Web Development</h3>
         <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             Eius vel, rem inventore quo tempora animi mollitia eaque error qui consectetur in reprehenderit magnam at vitae corporis quaerat deleniti explicabo nisi?
         </p>
         <a href="#">Web Plans</a>
     </div>
 
-    <div>
-        <img src="images/print.jpg" alt="Print">
+    <div class="service">
+        <img src="images/print.jpg" alt="Print service">
         <h3>Print</h3>
         <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             Eius vel, rem inventore quo tempora animi mollitia eaque error qui consectetur in reprehenderit magnam at vitae corporis quaerat deleniti explicabo nisi?
         </p>
         <a href="#">Print Plans</a>
@@ -126,9 +128,9 @@
 </section>
 
 <!-- VISION -->
-<section>
+<section class="vision">
 
-    <img src="images/vision.jpg" alt="Vision">
+    <img src="images/vision.jpg" alt="Team vision">
 
     <h2>Our Vision</h2>
 
@@ -142,11 +144,11 @@
 </section>
 
 <!-- TEAM -->
-<section id="team">
+<section id="team" class="team">
 
     <h2>Our Team</h2>
 
-    <div>
+    <div class="team-member">
         <img src="images/john.jpg" alt="John Doe">
         <h3>John Doe</h3>
         <h4>CEO and Co-owner</h4>
@@ -156,7 +158,7 @@
         </p>
     </div>
 
-    <div>
+    <div class="team-member">
         <img src="images/bob.jpg" alt="Bob Rite">
         <h3>Bob Rite</h3>
         <h4>CFO and Co-owner</h4>
@@ -169,22 +171,22 @@
 </section>
 
 <!-- CONTACT -->
-<section id="contact">
+<section id="contact" class="contact">
 
     <h2>Contact Us</h2>
 
     <h3>Send us a message</h3>
 
-    <form>
+    <form class="contact-form">
 
         <label for="name">Full Name</label><br>
-        <input type="text" id="name"><br><br>
+        <input type="text" id="name" name="name"><br><br>
 
         <label for="email">Email</label><br>
-        <input type="email" id="email"><br><br>
+        <input type="email" id="email" name="email"><br><br>
 
         <label for="message">Message</label><br>
-        <textarea id="message"></textarea><br><br>
+        <textarea id="message" name="message"></textarea><br><br>
 
         <button type="submit">Send</button>
 
@@ -192,7 +194,7 @@
 
     <h3>Hours of Operation</h3>
 
-    <table border="1">
+    <table border="1" class="hours-table">
         <tr>
             <th>Days</th>
             <th>Hours</th>
@@ -212,17 +214,17 @@
     <iframe 
         src="https://www.google.com/maps?q=Algonquin+College+Ottawa&output=embed"
         width="100%" 
-        height="300" 
-        style="border:0;" 
-        loading="lazy">
+        height="300">
     </iframe>
 
 </section>
 
 </main>
 
-<footer>
-    <p>© 2026 Three Star Media</p>
+<!-- FOOTER -->
+<footer class="footer">
+    <p>&copy; 2020 Three Star Media</p>
+    <p>All images are taken from Unsplash.</p>
 </footer>
 
 </body>
