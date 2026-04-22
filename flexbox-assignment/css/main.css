@@ -1,0 +1,179 @@
+/* ================= RESET ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.5;
+}
+
+/* ================= CONTAINER ================= */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+/* ================= HEADER ================= */
+header, footer {
+    background: #222;
+    color: white;
+}
+
+/* HEADER FLEX (mobile) */
+.header-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    width: 100%;
+}
+
+/* Logo */
+.logo {
+    font-family: "Combo", cursive;
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 1rem;
+}
+
+/* ================= NAVIGATION ================= */
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    padding: 0.5rem 1rem;
+    width: 100%;
+}
+
+.nav-links li {
+    margin: 10px 0;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.nav-links a:focus,
+.nav-links a:focus-visible {
+    outline: 2px solid #ffcc00;
+    outline-offset: 3px;
+}
+
+/* ================= HERO ================= */
+.banner {
+    background: url("https://plus.unsplash.com/premium_vector-1711987353813-68a5bdb6f207?q=80&w=2340&auto=format&fit=crop") no-repeat center/cover;
+    min-height: 60vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: white;
+    padding: 1rem;
+}
+
+.banner-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+}
+
+/* ================= TOPICS ================= */
+.topics {
+    background: #f4f4f4;
+    padding: 3rem 0;
+}
+
+.topics-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* ================= CARD ================= */
+.card {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+/* ================= BUTTON ================= */
+.btn {
+    text-decoration: none;
+    background: #333;
+    color: white;
+    padding: 0.5rem;
+    text-align: center;
+    margin-top: 1rem;
+    transition: all 0.2s ease;
+}
+
+.btn:hover {
+    background: #555;
+}
+
+.btn:focus,
+.btn:focus-visible {
+    outline: 3px solid #ffcc00;
+    outline-offset: 3px;
+}
+
+/* ================= FOOTER ================= */
+footer p, h2 {
+    padding: 1rem;
+}
+
+/* ================= DESKTOP ================= */
+@media (min-width: 760px) {
+
+    .header-flex {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        margin-bottom: 0;
+    }
+
+    .nav-links {
+        flex-direction: row;
+        gap: 20px;
+        padding: 0;
+        width: auto;
+    }
+
+    .nav-links li {
+        margin: 0;
+    }
+
+    .topics-flex {
+        flex-direction: row;
+    }
+
+    .card {
+        flex: 1;
+    }
+}
