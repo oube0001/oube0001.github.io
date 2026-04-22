@@ -1,0 +1,527 @@
+/* =========================
+   RESET DEFAULT STYLES
+========================= */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Media elements setup */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* Form elements inherit font */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Smooth scrolling behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Base body settings */
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+}
+
+/* =========================
+   GLOBAL STYLES
+========================= */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #ffffff;
+    color: #222;
+}
+
+/* Main container wrapper */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Section spacing */
+section {
+    padding: 40px 0;
+}
+
+/* Headings styling */
+h1,
+h2,
+h3 {
+    color: #222;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+/* Heading sizes */
+h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 2.4rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+/* Paragraph spacing */
+p {
+    margin-bottom: 15px;
+}
+
+/* Links reset */
+a {
+    text-decoration: none;
+}
+
+/* Remove list bullets */
+ul {
+    list-style: none;
+}
+
+/* Section background variations */
+.section-light {
+    background-color: #ffe6ac;
+}
+
+.section-gray {
+    background-color: #f3f3f3;
+}
+
+.section-white {
+    background-color: #ffffff;
+}
+
+/* =========================
+   ACCESSIBILITY HELPERS
+========================= */
+/* Hidden visually but readable by screen readers */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* =========================
+   BUTTON STYLES
+========================= */
+.btn-primary,
+.btn-dark,
+.send-btn {
+    display: inline-block;
+    padding: 16px 22px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+/* Primary button */
+.btn-primary {
+    background-color: #c78c06;
+    color: #222;
+}
+
+/* Primary hover effect */
+.btn-primary:hover {
+    background-color: #ffe6ac;
+}
+
+/* Dark button */
+.btn-dark,
+.send-btn {
+    background-color: #222;
+    color: #ffffff;
+}
+
+/* Dark hover effect */
+.btn-dark:hover,
+.send-btn:hover {
+    background-color: #c78c06;
+    color: #222;
+}
+
+/* Outline variation */
+.btn-outline {
+    border: 1px solid #c78c06;
+}
+
+/* =========================
+   HEADER AREA
+========================= */
+.site-header {
+    background-color: #222;
+    padding: 15px 0;
+}
+
+/* Header layout container */
+.header-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Logo size */
+.logo img {
+    max-width: 120px;
+}
+
+/* Navigation list */
+.main-nav .nav-list {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navigation links */
+.main-nav a {
+    display: block;
+    padding: 14px 16px;
+    color: #c78c06;
+    text-align: center;
+}
+
+/* Active / hover state */
+.main-nav a.active,
+.main-nav a:hover {
+    background-color: #c78c06;
+    color: #222;
+}
+
+/* Search bar layout */
+.search-form {
+    display: flex;
+    width: 100%;
+}
+
+/* Search input */
+.search-form input {
+    flex: 1;
+    border: 1px solid #c78c06;
+    padding: 10px 12px;
+}
+
+/* Search button */
+.search-form button {
+    background-color: #222;
+    border: 1px solid #c78c06;
+    color: #c78c06;
+    padding: 10px 14px;
+    cursor: pointer;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+.hero {
+    background-image: url("../images/main-banner.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+}
+
+/* Dark overlay */
+.hero-overlay {
+    background-color: rgba(0, 0, 0, 0.55);
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+}
+
+/* Content box */
+.hero-box {
+    background-color: rgba(34, 34, 34, 0.75);
+    color: #ffffff;
+    padding: 25px 20px;
+}
+
+/* White text */
+.hero-box h1,
+.hero-box p {
+    color: #ffffff;
+}
+
+/* =========================
+   ABOUT SECTION
+========================= */
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+/* About image */
+.about-image img {
+    width: 100%;
+}
+
+/* =========================
+   SERVICES SECTION
+========================= */
+.services h2 {
+    margin-bottom: 20px;
+}
+
+/* Services grid */
+.services-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+/* Service card */
+.service-card {
+    background-color: #ffe6ac;
+}
+
+/* Service image */
+.service-card img {
+    width: 100%;
+}
+
+/* Service content */
+.service-content {
+    padding: 18px 15px;
+}
+
+/* Service button */
+.service-content .btn-dark {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* =========================
+   VISION SECTION
+========================= */
+.vision {
+    background-image: url("../images/vision.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+}
+
+/* Overlay layer */
+.vision-overlay {
+    background-color: rgba(0, 0, 0, 0.45);
+    padding: 60px 0;
+}
+
+/* Vision text */
+.vision-content h2,
+.vision-content p {
+    color: #ffffff;
+}
+
+/* =========================
+   TEAM SECTION
+========================= */
+.team-member {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 20px;
+    background-color: #ffe6ac;
+}
+
+/* Team image */
+.team-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Team text */
+.team-text {
+    padding: 20px;
+}
+
+/* Job title underline */
+.job-title {
+    font-weight: 700;
+    border-bottom: 2px solid #c78c06;
+    padding-bottom: 6px;
+    margin-bottom: 15px;
+}
+
+/* =========================
+   CONTACT SECTION
+========================= */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+}
+
+/* Contact form layout */
+.contact-form-box form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Labels */
+.contact-form-box label {
+    margin-bottom: 6px;
+    font-weight: 700;
+}
+
+/* Inputs */
+.contact-form-box input,
+.contact-form-box textarea {
+    width: 100%;
+    border: 1px solid #222;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+/* Textarea */
+.contact-form-box textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+/* Map */
+.location-box iframe {
+    width: 100%;
+    height: 300px;
+    border: 0;
+}
+
+/* Table */
+.hours-box table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.hours-box th,
+.hours-box td {
+    border: 1px solid #222;
+    padding: 12px;
+    text-align: left;
+}
+
+.hours-box th {
+    background-color: #ffe6ac;
+}
+
+/* =========================
+   FOOTER
+========================= */
+.site-footer {
+    background-color: #222;
+    color: #c78c06;
+    padding: 20px 0;
+}
+
+.site-footer p {
+    margin-bottom: 8px;
+}
+
+.site-footer p:last-child {
+    margin-bottom: 0;
+}
+
+/* =========================
+   TABLET & DESKTOP STYLES
+========================= */
+@media screen and (min-width: 760px) {
+
+    .header-container {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .main-nav .nav-list {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .search-form {
+        max-width: 260px;
+    }
+
+    .hero,
+    .hero-overlay {
+        min-height: 600px;
+    }
+
+    .hero-box {
+        max-width: 700px;
+        padding: 40px;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .service-card.digital,
+    .service-card.marketing {
+        grid-column: span 3;
+    }
+
+    .service-card.video,
+    .service-card.web,
+    .service-card.print {
+        grid-column: span 2;
+    }
+
+    .team-member {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .team-member-reverse .team-image {
+        order: 2;
+    }
+
+    .team-member-reverse .team-text {
+        order: 1;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "form map"
+            "hours hours";
+    }
+
+    .contact-form-box {
+        grid-area: form;
+    }
+
+    .location-box {
+        grid-area: map;
+    }
+
+    .hours-box {
+        grid-area: hours;
+    }
+}
